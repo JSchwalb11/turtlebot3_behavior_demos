@@ -8,8 +8,8 @@ from launch.substitutions import LaunchConfiguration
 
 
 def generate_launch_description():
-    tb3_gazebo_dir = get_package_share_directory("turtlebot3_gazebo")
-    gazebo_ros_dir = get_package_share_directory("gazebo_ros")
+    tb3_gazebo_dir = get_package_share_directory("tb3_worlds")
+    ros_gz_sim_dir = get_package_share_directory("ros_gz_sim")
 
     use_sim_time = LaunchConfiguration("use_sim_time", default="true")
     x_pose = LaunchConfiguration("x_pose", default="0.0")
@@ -22,14 +22,9 @@ def generate_launch_description():
     # Start Gazebo server and client
     gzserver_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            join(gazebo_ros_dir, "launch", "gzserver.launch.py")
+            join(ros_gz_sim_dir, "launch", "gz_sim.launch.py")
         ),
-        launch_arguments={"world": default_world}.items(),
-    )
-    gzclient_cmd = IncludeLaunchDescription(
-        PythonLaunchDescriptionSource(
-            join(gazebo_ros_dir, "launch", "gzclient.launch.py")
-        )
+        launch_arguments={'gz_args': f'-v 4 {default_world}'}.items(),
     )
 
     # Start robot state publisher
@@ -43,7 +38,7 @@ def generate_launch_description():
     # Spawn the turtlebot
     spawn_turtlebot_cmd = IncludeLaunchDescription(
         PythonLaunchDescriptionSource(
-            join(tb3_gazebo_dir, "launch", "spawn_turtlebot3.launch.py")
+            join(tb3_gazebo_dir, "launch", "spawn_waffle_pi.launch.py")
         ),
         launch_arguments={"x_pose": x_pose, "y_pose": y_pose}.items(),
     )
@@ -51,7 +46,6 @@ def generate_launch_description():
     return LaunchDescription(
         [
             gzserver_cmd,
-            gzclient_cmd,
             robot_state_publisher_cmd,
             spawn_turtlebot_cmd,
         ]

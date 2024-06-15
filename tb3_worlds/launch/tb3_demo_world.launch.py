@@ -6,9 +6,11 @@ from launch.substitutions import LaunchConfiguration
 from launch_ros.actions import Node
 from os.path import join
 
+from launch.actions import AppendEnvironmentVariable
 
 def generate_launch_description():
     tb3_nav2_dir = get_package_share_directory("turtlebot3_navigation2")
+    slam_toolbox = get_package_share_directory("slam_toolbox")
     tb3_world_dir = get_package_share_directory("tb3_worlds")
 
     # Spawn the world and robot
@@ -32,7 +34,7 @@ def generate_launch_description():
             join(tb3_nav2_dir, "launch", "navigation2.launch.py")
         ),
         launch_arguments={
-            "use_sim_time": LaunchConfiguration("use_sim_time", default="true"),
+            "use_sim_time": LaunchConfiguration("use_sim_time", default="false"),
             "map": LaunchConfiguration("map", default=default_map),
         }.items(),
     )
@@ -53,7 +55,35 @@ def generate_launch_description():
             {"location_file": join(tb3_world_dir, "maps", "sim_house_locations.yaml")}
         ],
     )
-
-    return LaunchDescription(
-        [spawn_world_delayed, nav_stack, amcl_init_pose, spawn_blocks]
+    
+    # ros2 launch slam_toolbox online_async_launch.py params_file:=/opt/ros/humble/share/slam_toolbox/config/mapper_params_online_async.yaml
+    slam_tools = IncludeLaunchDescription(
+        PythonLaunchDescriptionSource(
+            join(slam_toolbox, "launch", "online_async_launch.py")
+        ),
+        launch_arguments={
+            "params_file": LaunchConfiguration("params_file", default="/opt/ros/humble/share/slam_toolbox/config/mapper_params_online_async.yaml"),
+            # "map": LaunchConfiguration("map", default=default_map),
+        }.items(),
     )
+
+    set_env_vars_resources_models = AppendEnvironmentVariable(
+        'GZ_SIM_RESOURCE_PATH',
+        join(get_package_share_directory('tb3_worlds'),
+            'models'))
+    
+    set_env_vars_resources_worlds = AppendEnvironmentVariable(
+        'GZ_SIM_RESOURCE_PATH',
+        join(get_package_share_directory('tb3_worlds'),
+            'worlds'))
+    
+    ld = LaunchDescription(
+        [spawn_world_delayed, nav_stack, slam_tools, amcl_init_pose, spawn_blocks]
+        # [spawn_world_delayed, slam_tools, amcl_init_pose, spawn_blocks]
+
+    )
+        
+    ld.add_action(set_env_vars_resources_models)
+    ld.add_action(set_env_vars_resources_worlds)
+    
+    return ld

@@ -67,6 +67,7 @@ RUN source /turtlebot3_ws/install/setup.bash \
 
 # Set up the entrypoint
 COPY ./docker/entrypoint.sh /
+COPY ./rviz/nav2_default_view2.rviz /opt/ros/humble/share/nav2_bringup/rviz/nav2_default_view.rviz
 ENTRYPOINT [ "/entrypoint.sh" ]
 
 #####################

@@ -58,19 +58,19 @@ def generate_launch_description():
             }],
         ),
         
-        Node(
-            package='tf2_ros',
-            executable='static_transform_publisher',
-            name='static_transform_odom_to_base_footprint',
-            arguments=['0', '0', '0', '0', '0', '0', 'odom', 'base_footprint'],
-            output='screen'
-        ),
+        # Node(
+        #     package='tf2_ros',
+        #     executable='static_transform_publisher',
+        #     name='static_transform_odom_to_base_footprint',
+        #     arguments=['0', '0', '0', '0', '0', '0', 'odom', 'base_footprint'],
+        #     output='screen'
+        # ),
         
         Node(
             package='tf2_ros',
             executable='static_transform_publisher',
             name='static_transform_map_to_odom',
-            arguments=['0', '0', '0', '0', '0', '1', 'map', 'odom'],
+            arguments=['0', '0', '0', '0', '0', '0', 'map', 'odom'],
             output='screen'
         ),
     ])

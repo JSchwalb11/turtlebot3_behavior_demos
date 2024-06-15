@@ -43,11 +43,8 @@
     <link name="imu_link">
       <sensor name="tb3_imu" type="imu">
         <always_on>true</always_on>
-        <update_rate>200</update_rate>
+        <update_rate>250</update_rate>
         <topic>imu</topic>
-        <imu>
-          ... <!-- all the content of <imu> -->
-        </imu>
       </sensor>
     </link>
 
@@ -89,11 +86,29 @@
         <always_on>true</always_on>
         <visualize>true</visualize>
         <pose>-0.064 0 0.121 0 0 0</pose>
-        <update_rate>5</update_rate>
+        <update_rate>10</update_rate>
         <topic>scan</topic>
         <gz_frame_id>base_scan</gz_frame_id>
         <lidar>
-          ... <!-- same content as <ray> in the original -->
+          <scan>
+            <horizontal>
+              <samples>640</samples>
+              <resolution>1</resolution>
+              <min_angle>-1.396263</min_angle>
+              <max_angle>1.396263</max_angle>
+            </horizontal>
+            <vertical>
+              <samples>16</samples>
+              <resolution>1</resolution>
+              <min_angle>-0.261799</min_angle>
+              <max_angle>0.261799</max_angle>
+            </vertical>
+          </scan>
+          <range>
+            <min>0.08</min>
+            <max>10.0</max>
+            <resolution>0.01</resolution>
+          </range>
         </lidar>
       </sensor>
     </link>
@@ -300,7 +315,12 @@
 
       <pose>0.076 0.0 0.093 0 0 0</pose>
       <camera name="intel_realsense_r200">
+          <always_on>true</always_on>
+          <visualize>true</visualize>
+          <update_rate>30.0</update_rate>
           <camera_info_topic>camera/camera_info</camera_info_topic>
+          <topic>camera/image_raw</topic>
+          <gz_frame_id>camera_rgb_frame</gz_frame_id>
           <horizontal_fov>1.02974</horizontal_fov>
           <image>
             <width>1920</width>

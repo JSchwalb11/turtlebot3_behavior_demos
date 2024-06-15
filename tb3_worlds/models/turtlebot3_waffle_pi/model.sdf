@@ -314,32 +314,54 @@
       </inertial>
 
       <pose>0.076 0.0 0.093 0 0 0</pose>
-      <camera name="intel_realsense_r200">
-          <always_on>true</always_on>
-          <visualize>true</visualize>
-          <update_rate>30.0</update_rate>
-          <camera_info_topic>camera/camera_info</camera_info_topic>
-          <topic>camera/image_raw</topic>
-          <gz_frame_id>camera_rgb_frame</gz_frame_id>
-          <horizontal_fov>1.02974</horizontal_fov>
-          <image>
-            <width>1920</width>
-            <height>1080</height>
-            <format>R8G8B8</format>
-          </image>
-          <clip>
-            <near>0.02</near>
-            <far>300</far>
-          </clip>
-          <noise>
-            <type>gaussian</type>
-            <!-- Noise is sampled independently per pixel on each frame.
-                  That pixel's noise value is added to each of its color
-                  channels, which at that point lie in the range [0,1]. -->
-            <mean>0.0</mean>
-            <stddev>0.007</stddev>
-          </noise>
-        </camera>
+      <sensor name="camera" type="camera">
+        <update_rate>30</update_rate>
+        <topic>camera/image_raw</topic>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+          <camera name="intel_realsense_r200">
+            <camera_info_topic>camera/camera_info</camera_info_topic>
+            <gz_frame_id>camera_rgb_frame</gz_frame_id>
+            <horizontal_fov>1.02974</horizontal_fov>
+            <image>
+              <width>1920</width>
+              <height>1080</height>
+              <format>R8G8B8</format>
+            </image>
+            <clip>
+              <near>0.02</near>
+              <far>300</far>
+            </clip>
+            <noise>
+              <type>gaussian</type>
+              <!-- Noise is sampled independently per pixel on each frame.
+                    That pixel's noise value is added to each of its color
+                    channels, which at that point lie in the range [0,1]. -->
+              <mean>0.0</mean>
+              <stddev>0.007</stddev>
+            </noise>
+          </camera>
+        </sensor>
+
+        <sensor name="depth_camera" type="depth_camera">
+        <update_rate>30</update_rate>
+        <topic>camera/depth_raw</topic>
+        <always_on>true</always_on>
+        <visualize>true</visualize>
+          <camera name="depth1">
+            <horizontal_fov>1.05</horizontal_fov>
+            <image>
+              <width>256</width>
+              <height>256</height>
+              <format>R_FLOAT32</format>
+            </image>
+            <clip>
+              <near>0.1</near>
+              <far>10.0</far>
+            </clip>
+          </camera>
+        </sensor>
+        
     </link>    
 
     <joint name="base_joint" type="fixed">

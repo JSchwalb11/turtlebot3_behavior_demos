@@ -1,0 +1,2038 @@
+<sdf version='1.9'>
+  <world name='default'>
+    <plugin name='gz::sim::systems::Physics' filename='gz-sim-physics-system'/>
+    <plugin name='gz::sim::systems::UserCommands' filename='gz-sim-user-commands-system'/>
+    <plugin name='gz::sim::systems::SceneBroadcaster' filename='gz-sim-scene-broadcaster-system'/>
+    <plugin name='gz::sim::systems::Sensors' filename='gz-sim-sensors-system'>
+      <render_engine>ogre2</render_engine>
+    </plugin>
+    <plugin name='gz::sim::systems::Imu' filename='gz-sim-imu-system'/>
+    <gravity>0 0 -9.8</gravity>
+    <magnetic_field>6e-06 2.3e-05 -4.2e-05</magnetic_field>
+    <atmosphere type='adiabatic'/>
+    <physics type='ode'>
+      <max_step_size>0.001</max_step_size>
+      <real_time_factor>1</real_time_factor>
+      <real_time_update_rate>1000</real_time_update_rate>
+    </physics>
+    <scene>
+      <ambient>0.8 0.8 0.8 1</ambient>
+      <background>0.7 0.7 0.7 1</background>
+      <shadows>false</shadows>
+    </scene>
+    <wind/>
+    <spherical_coordinates>
+      <surface_model>EARTH_WGS84</surface_model>
+      <latitude_deg>0</latitude_deg>
+      <longitude_deg>0</longitude_deg>
+      <elevation>0</elevation>
+      <heading_deg>0</heading_deg>
+    </spherical_coordinates>
+    <state world_name='default'>
+      <sim_time>206 459000000</sim_time>
+      <real_time>79 688300467</real_time>
+      <wall_time>1618613802 581777859</wall_time>
+      <iterations>78879</iterations>
+      <model name='ground_plane'>
+        <pose>0 0 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='link'>
+          <pose>0 0 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <model name='sim_house'>
+        <pose>2.16464 1.82515 0 0 -0 0</pose>
+        <scale>1 1 1</scale>
+        <link name='Wall_0'>
+          <pose>-0.536336 -1.35573 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_1'>
+          <pose>0.638668 -1.05573 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_10'>
+          <pose>-0.633986 3.82162 0 0 0 -2.35619</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_11'>
+          <pose>-1.81834 0.635766 0 0 0 -1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_13'>
+          <pose>-1.50066 1.91224 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_14'>
+          <pose>-1.20066 1.10509 0 0 0 -1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_15'>
+          <pose>-1.50066 0.318046 0 0 -0 3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_17'>
+          <pose>1.49965 3.37358 0 0 0 -1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_18'>
+          <pose>1.07465 1.82358 0 0 -0 3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_19'>
+          <pose>0.649648 1.52358 0 0 0 -1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_2'>
+          <pose>1.18867 -0.755734 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_20'>
+          <pose>1.07465 1.22358 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_21'>
+          <pose>1.49965 0.798576 0 0 0 -1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_22'>
+          <pose>2.04964 0.373576 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_24'>
+          <pose>2.37966 1.08427 0 0 -0 3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_25'>
+          <pose>2.07966 2.75927 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_29'>
+          <pose>3.15696 1.56157 0 0 -0 0.785398</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_3'>
+          <pose>1.73867 -1.05573 0 0 0 -1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_30'>
+          <pose>4.30925 2.03886 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_31'>
+          <pose>4.98425 1.86386 0 0 0 -1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_32'>
+          <pose>4.43425 1.68886 0 0 -0 3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_33'>
+          <pose>3.23018 1.03479 0 0 0 -2.35619</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_35'>
+          <pose>2.37966 4.43427 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_36'>
+          <pose>2.67966 4.73427 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_4'>
+          <pose>3.11232 -1.35573 0 0 -0 0</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_5'>
+          <pose>5.31682 -0.524884 0 0 -0 0.785398</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_6'>
+          <pose>6.16288 2.23097 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_7'>
+          <pose>5.14902 4.15597 0 0 -0 3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_8'>
+          <pose>4.15036 4.58097 0 0 -0 1.5708</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+        <link name='Wall_9'>
+          <pose>2.35036 5.00597 0 0 -0 3.14159</pose>
+          <velocity>0 0 0 0 -0 0</velocity>
+          <acceleration>0 0 0 0 -0 0</acceleration>
+          <wrench>0 0 0 0 -0 0</wrench>
+        </link>
+      </model>
+      <light name='sun'>
+        <pose>0 0 10 0 -0 0</pose>
+      </light>
+    </state>
+    <gui fullscreen='false'>
+      <camera name='user_camera'>
+        <pose>0.992328 -4.52052 10.8021 0 1.06764 1.5682</pose>
+        <view_controller>orbit</view_controller>
+        <projection_type>perspective</projection_type>
+      </camera>
+    </gui>
+    <model name='turtlebot3_waffle_pi'>
+      <pose>0 0 0.01 0 -0 0</pose>
+      <link name='base_footprint'>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <link name='base_link'>
+        <inertial>
+          <pose>-0.064 0 0.048 0 -0 0</pose>
+          <inertia>
+            <ixx>0.0421114</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.0421114</iyy>
+            <iyz>0</iyz>
+            <izz>0.0752549</izz>
+          </inertia>
+          <mass>1.3729100000000001</mass>
+        </inertial>
+        <collision name='base_collision'>
+          <pose>-0.064 0 0.048 0 0 0</pose>
+          <geometry>
+            <box>
+              <size>0.265 0.265 0.089</size>
+            </box>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='base_visual'>
+          <pose>-0.064 0 0 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>file:///overlay_ws/install/tb3_worlds/share/tb3_worlds/models/turtlebot3_waffle_pi/model://turtlebot3_common/meshes/waffle_pi_base.dae</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose>0 0 0 0 -0 0</pose>
+        <enable_wind>false</enable_wind>
+      </link>
+      <link name='imu_link'>
+        <sensor name='tb3_imu' type='imu'>
+          <pose>0 0 0 0 -0 0</pose>
+          <topic>imu</topic>
+          <update_rate>250</update_rate>
+          <enable_metrics>false</enable_metrics>
+          <imu>
+            <orientation_reference_frame>
+              <localization>CUSTOM</localization>
+              <custom_rpy>0 0 0</custom_rpy>
+              <grav_dir_x>1 0 0</grav_dir_x>
+            </orientation_reference_frame>
+            <angular_velocity>
+              <x>
+                <noise type='none'>
+                  <mean>0</mean>
+                  <stddev>0</stddev>
+                  <bias_mean>0</bias_mean>
+                  <bias_stddev>0</bias_stddev>
+                  <dynamic_bias_stddev>0</dynamic_bias_stddev>
+                  <dynamic_bias_correlation_time>0</dynamic_bias_correlation_time>
+                  <precision>0</precision>
+                </noise>
+              </x>
+              <y>
+                <noise type='none'>
+                  <mean>0</mean>
+                  <stddev>0</stddev>
+                  <bias_mean>0</bias_mean>
+                  <bias_stddev>0</bias_stddev>
+                  <dynamic_bias_stddev>0</dynamic_bias_stddev>
+                  <dynamic_bias_correlation_time>0</dynamic_bias_correlation_time>
+                  <precision>0</precision>
+                </noise>
+              </y>
+              <z>
+                <noise type='none'>
+                  <mean>0</mean>
+                  <stddev>0</stddev>
+                  <bias_mean>0</bias_mean>
+                  <bias_stddev>0</bias_stddev>
+                  <dynamic_bias_stddev>0</dynamic_bias_stddev>
+                  <dynamic_bias_correlation_time>0</dynamic_bias_correlation_time>
+                  <precision>0</precision>
+                </noise>
+              </z>
+            </angular_velocity>
+            <linear_acceleration>
+              <x>
+                <noise type='none'>
+                  <mean>0</mean>
+                  <stddev>0</stddev>
+                  <bias_mean>0</bias_mean>
+                  <bias_stddev>0</bias_stddev>
+                  <dynamic_bias_stddev>0</dynamic_bias_stddev>
+                  <dynamic_bias_correlation_time>0</dynamic_bias_correlation_time>
+                  <precision>0</precision>
+                </noise>
+              </x>
+              <y>
+                <noise type='none'>
+                  <mean>0</mean>
+                  <stddev>0</stddev>
+                  <bias_mean>0</bias_mean>
+                  <bias_stddev>0</bias_stddev>
+                  <dynamic_bias_stddev>0</dynamic_bias_stddev>
+                  <dynamic_bias_correlation_time>0</dynamic_bias_correlation_time>
+                  <precision>0</precision>
+                </noise>
+              </y>
+              <z>
+                <noise type='none'>
+                  <mean>0</mean>
+                  <stddev>0</stddev>
+                  <bias_mean>0</bias_mean>
+                  <bias_stddev>0</bias_stddev>
+                  <dynamic_bias_stddev>0</dynamic_bias_stddev>
+                  <dynamic_bias_correlation_time>0</dynamic_bias_correlation_time>
+                  <precision>0</precision>
+                </noise>
+              </z>
+            </linear_acceleration>
+            <enable_orientation>true</enable_orientation>
+          </imu>
+        </sensor>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <link name='base_scan'>
+        <inertial>
+          <pose>-0.052 0 0.111 0 -0 0</pose>
+          <inertia>
+            <ixx>0.001</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.001</iyy>
+            <iyz>0</iyz>
+            <izz>0.001</izz>
+          </inertia>
+          <mass>0.114</mass>
+        </inertial>
+        <collision name='lidar_sensor_collision'>
+          <pose>-0.052 0 0.111 0 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.050799999999999998</radius>
+              <length>0.055</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+            <contact/>
+          </surface>
+        </collision>
+        <visual name='lidar_sensor_visual'>
+          <pose>-0.064 0 0.121 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>file:///overlay_ws/install/tb3_worlds/share/tb3_worlds/models/turtlebot3_waffle_pi/model://turtlebot3_common/meshes/lds.dae</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <sensor name='hls_lfcd_lds' type='gpu_lidar'>
+          <pose>-0.064 0 0.121 0 -0 0</pose>
+          <topic>scan</topic>
+          <update_rate>10</update_rate>
+          <enable_metrics>false</enable_metrics>
+          <lidar>
+            <scan>
+              <horizontal>
+                <samples>640</samples>
+                <resolution>1</resolution>
+                <min_angle>-1.3962600000000001</min_angle>
+                <max_angle>1.3962600000000001</max_angle>
+              </horizontal>
+              <vertical>
+                <samples>16</samples>
+                <min_angle>-0.261799</min_angle>
+                <max_angle>0.261799</max_angle>
+                <resolution>1</resolution>
+              </vertical>
+            </scan>
+            <range>
+              <min>0.080000000000000002</min>
+              <max>10</max>
+              <resolution>0.01</resolution>
+            </range>
+            <noise>
+              <type>none</type>
+              <mean>0</mean>
+              <stddev>0</stddev>
+            </noise>
+            <visibility_mask>4294967295</visibility_mask>
+          </lidar>
+        </sensor>
+        <pose>0 0 0 0 -0 0</pose>
+        <enable_wind>false</enable_wind>
+      </link>
+      <link name='wheel_left_link'>
+        <inertial>
+          <pose>0 0.144 0.023 -1.57 0 0</pose>
+          <inertia>
+            <ixx>0.0018158200000000001</ixx>
+            <ixy>-9.3392000000000004e-12</ixy>
+            <ixz>1.04909e-11</ixz>
+            <iyy>0.0032922099999999998</iyy>
+            <iyz>5.7569399999999997e-11</iyz>
+            <izz>0.0018158200000000001</izz>
+          </inertia>
+          <mass>0.028498900000000001</mass>
+        </inertial>
+        <collision name='wheel_left_collision'>
+          <pose>0.0 0.144 0.023 -1.57 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.033000000000000002</radius>
+              <length>0.017999999999999999</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100000</mu>
+                <mu2>100000</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.20000000000000001</soft_erp>
+                <kp>100000</kp>
+                <kd>1</kd>
+                <max_vel>0.01</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce/>
+          </surface>
+        </collision>
+        <visual name='wheel_left_visual'>
+          <pose>0.0 0.144 0.023 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>file:///overlay_ws/install/tb3_worlds/share/tb3_worlds/models/turtlebot3_waffle_pi/model://turtlebot3_common/meshes/tire.dae</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose>0 -0 -0 0 -0 0</pose>
+        <enable_wind>false</enable_wind>
+      </link>
+      <link name='wheel_right_link'>
+        <inertial>
+          <pose>0 -0.144 0.023 -1.57 0 0</pose>
+          <inertia>
+            <ixx>0.0018158200000000001</ixx>
+            <ixy>-9.3392000000000004e-12</ixy>
+            <ixz>1.04909e-11</ixz>
+            <iyy>0.0032922099999999998</iyy>
+            <iyz>5.7569399999999997e-11</iyz>
+            <izz>0.0018158200000000001</izz>
+          </inertia>
+          <mass>0.028498900000000001</mass>
+        </inertial>
+        <collision name='wheel_right_collision'>
+          <pose>0.0 -0.144 0.023 -1.57 0 0</pose>
+          <geometry>
+            <cylinder>
+              <radius>0.033000000000000002</radius>
+              <length>0.017999999999999999</length>
+            </cylinder>
+          </geometry>
+          <surface>
+            <friction>
+              <ode>
+                <mu>100000</mu>
+                <mu2>100000</mu2>
+                <fdir1>0 0 0</fdir1>
+                <slip1>0</slip1>
+                <slip2>0</slip2>
+              </ode>
+            </friction>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.20000000000000001</soft_erp>
+                <kp>100000</kp>
+                <kd>1</kd>
+                <max_vel>0.01</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <bounce/>
+          </surface>
+        </collision>
+        <visual name='wheel_right_visual'>
+          <pose>0.0 -0.144 0.023 0 0 0</pose>
+          <geometry>
+            <mesh>
+              <uri>file:///overlay_ws/install/tb3_worlds/share/tb3_worlds/models/turtlebot3_waffle_pi/model://turtlebot3_common/meshes/tire.dae</uri>
+              <scale>0.001 0.001 0.001</scale>
+            </mesh>
+          </geometry>
+        </visual>
+        <pose>0 0 -0 0 -0 0</pose>
+        <enable_wind>false</enable_wind>
+      </link>
+      <link name='caster_back_right_link'>
+        <pose>-0.177 -0.064 -0.004 -1.57 0 0</pose>
+        <inertial>
+          <mass>0.001</mass>
+          <inertia>
+            <ixx>1.0000000000000001e-05</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.0000000000000001e-05</iyy>
+            <iyz>0</iyz>
+            <izz>1.0000000000000001e-05</izz>
+          </inertia>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <sphere>
+              <radius>0.0050000000000000001</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.20000000000000001</soft_erp>
+                <kp>100000</kp>
+                <kd>1</kd>
+                <max_vel>0.01</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+          </surface>
+        </collision>
+        <enable_wind>false</enable_wind>
+      </link>
+      <link name='caster_back_left_link'>
+        <pose>-0.177 0.064 -0.004 -1.57 0 0</pose>
+        <inertial>
+          <mass>0.001</mass>
+          <inertia>
+            <ixx>1.0000000000000001e-05</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1.0000000000000001e-05</iyy>
+            <iyz>0</iyz>
+            <izz>1.0000000000000001e-05</izz>
+          </inertia>
+          <pose>0 0 0 0 -0 0</pose>
+        </inertial>
+        <collision name='collision'>
+          <geometry>
+            <sphere>
+              <radius>0.0050000000000000001</radius>
+            </sphere>
+          </geometry>
+          <surface>
+            <contact>
+              <ode>
+                <soft_cfm>0</soft_cfm>
+                <soft_erp>0.20000000000000001</soft_erp>
+                <kp>100000</kp>
+                <kd>1</kd>
+                <max_vel>0.01</max_vel>
+                <min_depth>0.001</min_depth>
+              </ode>
+            </contact>
+            <friction>
+              <ode/>
+            </friction>
+            <bounce/>
+          </surface>
+        </collision>
+        <enable_wind>false</enable_wind>
+      </link>
+      <link name='camera_link'>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <link name='camera_rgb_optical_frame'>
+        <inertial>
+          <pose>0.076 0 0.093 0 -0 0</pose>
+          <inertia>
+            <ixx>0.001</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>0.001</iyy>
+            <iyz>0</iyz>
+            <izz>0.001</izz>
+          </inertia>
+          <mass>0.035000000000000003</mass>
+        </inertial>
+        <pose>0.076 0 0.093 0 -0 0</pose>
+        <sensor name='camera' type='camera'>
+          <pose>0 0 0 0 -0 0</pose>
+          <topic>camera/image_raw</topic>
+          <update_rate>30</update_rate>
+          <enable_metrics>false</enable_metrics>
+          <camera name='intel_realsense_r200'>
+            <pose>0 0 0 0 -0 0</pose>
+            <horizontal_fov>1.0297400000000001</horizontal_fov>
+            <image>
+              <width>1920</width>
+              <height>1080</height>
+              <format>RGB_INT8</format>
+              <anti_aliasing>4</anti_aliasing>
+            </image>
+            <camera_info_topic>camera/camera_info</camera_info_topic>
+            <trigger_topic></trigger_topic>
+            <triggered>false</triggered>
+            <clip>
+              <near>0.02</near>
+              <far>300</far>
+            </clip>
+            <save enabled='false'>
+              <path>__default__</path>
+            </save>
+            <visibility_mask>4294967295</visibility_mask>
+            <noise>
+              <type>gaussian</type>
+              <mean>0</mean>
+              <stddev>0.0070000000000000001</stddev>
+            </noise>
+            <distortion>
+              <k1>0</k1>
+              <k2>0</k2>
+              <k3>0</k3>
+              <p1>0</p1>
+              <p2>0</p2>
+              <center>0.5 0.5</center>
+            </distortion>
+            <lens>
+              <type>stereographic</type>
+              <scale_to_hfov>true</scale_to_hfov>
+              <cutoff_angle>1.5708</cutoff_angle>
+              <env_texture_size>256</env_texture_size>
+            </lens>
+            <optical_frame_id></optical_frame_id>
+          </camera>
+        </sensor>
+        <sensor name='depth_camera' type='depth_camera'>
+          <pose>0 0 0 0 -0 0</pose>
+          <topic>camera/depth_raw</topic>
+          <update_rate>30</update_rate>
+          <enable_metrics>false</enable_metrics>
+          <camera name='depth1'>
+            <pose>0 0 0 0 -0 0</pose>
+            <horizontal_fov>1.05</horizontal_fov>
+            <image>
+              <width>256</width>
+              <height>256</height>
+              <format>R_FLOAT32</format>
+              <anti_aliasing>4</anti_aliasing>
+            </image>
+            <camera_info_topic>__default__</camera_info_topic>
+            <trigger_topic></trigger_topic>
+            <triggered>false</triggered>
+            <clip>
+              <near>0.10000000000000001</near>
+              <far>10</far>
+            </clip>
+            <save enabled='false'>
+              <path>__default__</path>
+            </save>
+            <visibility_mask>4294967295</visibility_mask>
+            <noise>
+              <type>none</type>
+              <mean>0</mean>
+              <stddev>0</stddev>
+            </noise>
+            <distortion>
+              <k1>0</k1>
+              <k2>0</k2>
+              <k3>0</k3>
+              <p1>0</p1>
+              <p2>0</p2>
+              <center>0.5 0.5</center>
+            </distortion>
+            <lens>
+              <type>stereographic</type>
+              <scale_to_hfov>true</scale_to_hfov>
+              <cutoff_angle>1.5708</cutoff_angle>
+              <env_texture_size>256</env_texture_size>
+            </lens>
+            <optical_frame_id></optical_frame_id>
+          </camera>
+        </sensor>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='base_joint' type='fixed'>
+        <parent>base_footprint</parent>
+        <child>base_link</child>
+        <pose>0 0 0.01 0 -0 0</pose>
+      </joint>
+      <joint name='wheel_left_joint' type='revolute'>
+        <parent>base_link</parent>
+        <child>wheel_left_link</child>
+        <pose>0 0.144 0.023 -1.57 0 0</pose>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-10000000000000000</lower>
+            <upper>10000000000000000</upper>
+            <effort>inf</effort>
+            <velocity>inf</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <joint name='wheel_right_joint' type='revolute'>
+        <parent>base_link</parent>
+        <child>wheel_right_link</child>
+        <pose>0 -0.144 0.023 -1.57 0 0</pose>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-10000000000000000</lower>
+            <upper>10000000000000000</upper>
+            <effort>inf</effort>
+            <velocity>inf</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <joint name='caster_back_right_joint' type='ball'>
+        <parent>base_link</parent>
+        <child>caster_back_right_link</child>
+        <pose>0 0 0 0 -0 0</pose>
+      </joint>
+      <joint name='caster_back_left_joint' type='ball'>
+        <parent>base_link</parent>
+        <child>caster_back_left_link</child>
+        <pose>0 0 0 0 -0 0</pose>
+      </joint>
+      <joint name='imu_joint' type='fixed'>
+        <parent>base_link</parent>
+        <child>imu_link</child>
+        <pose>-0.032 0 0.068 0 -0 0</pose>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-10000000000000000</lower>
+            <upper>10000000000000000</upper>
+            <effort>inf</effort>
+            <velocity>inf</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <joint name='lidar_joint' type='fixed'>
+        <parent>base_link</parent>
+        <child>base_scan</child>
+        <pose>-0.064 0 0.121 0 -0 0</pose>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-10000000000000000</lower>
+            <upper>10000000000000000</upper>
+            <effort>inf</effort>
+            <velocity>inf</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <joint name='camera_joint' type='fixed'>
+        <parent>base_link</parent>
+        <child>camera_link</child>
+        <pose>0.073 -0.011 0.084 0 -0 0</pose>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-10000000000000000</lower>
+            <upper>10000000000000000</upper>
+            <effort>inf</effort>
+            <velocity>inf</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <joint name='camera_rgb_joint' type='fixed'>
+        <parent>camera_link</parent>
+        <child>camera_rgb_optical_frame</child>
+        <pose>0.003 0.011 0.009 0 -0 0</pose>
+        <axis>
+          <xyz>0 0 1</xyz>
+          <limit>
+            <lower>-10000000000000000</lower>
+            <upper>10000000000000000</upper>
+            <effort>inf</effort>
+            <velocity>inf</velocity>
+            <stiffness>100000000</stiffness>
+            <dissipation>1</dissipation>
+          </limit>
+          <dynamics>
+            <spring_reference>0</spring_reference>
+            <spring_stiffness>0</spring_stiffness>
+            <damping>0</damping>
+            <friction>0</friction>
+          </dynamics>
+        </axis>
+      </joint>
+      <plugin name='gz::sim::systems::DiffDrive' filename='gz-sim-diff-drive-system'>
+        <left_joint>wheel_left_joint</left_joint>
+        <right_joint>wheel_right_joint</right_joint>
+        <wheel_separation>0.287</wheel_separation>
+        <wheel_radius>0.033</wheel_radius>
+        <max_linear_acceleration>0.033</max_linear_acceleration>
+        <topic>cmd_vel</topic>
+        <odom_topic>odom</odom_topic>
+        <frame_id>odom</frame_id>
+        <child_frame_id>base_footprint</child_frame_id>
+        <odom_publisher_frequency>30</odom_publisher_frequency>
+        <tf_topic>/tf</tf_topic>
+      </plugin>
+      <plugin name='gz::sim::systems::JointStatePublisher' filename='gz-sim-joint-state-publisher-system'>
+        <topic>joint_states</topic>
+        <joint_name>wheel_left_joint</joint_name>
+        <joint_name>wheel_right_joint</joint_name>
+      </plugin>
+      <static>false</static>
+      <self_collide>false</self_collide>
+    </model>
+    <model name='moon_base_dome'>
+      <static>true</static>
+      <link name='main'>
+        <collision name='BaseRamp_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/BaseRamp.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='BaseRamp_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/BaseRamp.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/BaseRamp_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/BaseRamp_Metalness.jpg</metalness_map>
+                <normal_map>materials/textures/BaseRamp_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/BaseRamp_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='DomeEntryWay_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/DomeEntryWay.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='DomeEntryWay_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/DomeEntryWay.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/DomeGate_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/DomeGate_Metalness.jpg</metalness_map>
+                <normal_map>materials/textures/DomeGate_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/DomeGate_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='OutsideRamp_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/OutsideRamp.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='OutsideRamp_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/OutsideRamp.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/ModPlatform_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/ModPlatform_Metalness.jpg</metalness_map>
+                <normal_map>materials/textures/ModPlatform_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/ModPlatform_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='Tube_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/Tube.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='Tube_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/Tube.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/TubeNode_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/TubeNode_Metalness.png</metalness_map>
+                <normal_map>materials/textures/TubeNode_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/TubeNode_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='DualFanVent_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/DualFanVent.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='DualFanVent_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/DualFanVent.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/DualFanVent_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/DualFanVent_Metalness.jpg</metalness_map>
+                <normal_map>materials/textures/DualFanVent_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/DualFanVent_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='OuterWallGate_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/OuterWallGate.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='OuterWallGate_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/OuterWallGate.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/OuterWallGate_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/OuterWallGate_Metalness.jpg</metalness_map>
+                <normal_map>materials/textures/OuterWallGate_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/OuterWallGate_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='OuterWall_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/OuterWall.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='OuterWall_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/OuterWall.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/OuterWall_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/OuterWall_Metalness.jpg</metalness_map>
+                <normal_map>materials/textures/OuterWall_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/OuterWall_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='StrutBase_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/StrutBase.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='StrutBase_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/StrutBase.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/ModPlatformBase_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/ModPlatformBase_Metalness.jpg</metalness_map>
+                <normal_map>materials/textures/ModPlatformBase_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/ModPlatformBase_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='InsideMainFloor_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/InsideMainFloor.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='InsideMainFloor_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/InsideMainFloor.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/InsideMainFloor_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/InsideMainFloor_Metalness.png</metalness_map>
+                <normal_map>materials/textures/InsideMainFloor_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/InsideMainFloor_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='GardenUpper_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/GardenUpper.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='GardenUpper_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/GardenUpper.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/GardenUpper_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/GardenUpper_Metalness.png</metalness_map>
+                <normal_map>materials/textures/GardenUpper_Normal.png</normal_map>
+                <roughness_map>materials/textures/GardenUpper_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='GardenUpperLevel_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/GardenUpperLevel.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='GardenUpperLevel_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/GardenUpperLevel.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/GardenUpperLevel_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/GardenUpperLevel_Metalness.jpg</metalness_map>
+                <normal_map>materials/textures/GardenUpperLevel_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/GardenUpperLevel_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='GardenUpperRailingRail_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/GardenUpperRailingRail.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='GardenUpperRailingRail_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/GardenUpperRailingRail.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/GardenUpperRailingRail_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/GardenUpperRailingRail_Metalness.png</metalness_map>
+                <normal_map>materials/textures/GardenUpperRailingRail_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/GardenUpperRailingRail_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='IndoorEntryRamp_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/IndoorEntryRamp.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='IndoorEntryRamp_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/IndoorEntryRamp.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/IndoorEntryRamp_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/IndoorEntryRamp_Metalness.png</metalness_map>
+                <normal_map>materials/textures/IndoorEntryRamp_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/IndoorEntryRamp_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='HexPlantPods_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/HexPlantPods.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='HexPlantPods_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/HexPlantPods.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/HexPlantPods_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/HexPlantPods_Metalness.png</metalness_map>
+                <normal_map>materials/textures/HexPlantPods_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/HexPlantPods_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='IndoorRamp_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/IndoorRamp.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='IndoorRamp_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/IndoorRamp.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/IndoorRamp_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/IndoorRamp_Metalness.jpg</metalness_map>
+                <normal_map>materials/textures/IndoorRamp_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/IndoorRamp_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='InnerWall_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/InnerWall.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='InnerWall_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/InnerWall.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/InnerWall_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/InnerWall_Metalness.png</metalness_map>
+                <normal_map>materials/textures/InnerWall_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/InnerWall_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='InnerWallFrame_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/InnerWallFrame.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='InnerWallFrame_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/InnerWallFrame.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/InnerWallFrame_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/InnerWallFrame_Metalness.png</metalness_map>
+                <normal_map>materials/textures/InnerWallFrame_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/InnerWallFrame_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='InnerWallTrim_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/InnerWallTrim.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='InnerWallTrim_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/InnerWallTrim.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/InnerWallTrim_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/InnerWallTrim_Metalness.png</metalness_map>
+                <normal_map>materials/textures/InnerWallTrim_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/InnerWallTrim_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='InnerWallUpper_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/InnerWallUpper.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='InnerWallUpper_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/InnerWallUpper.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/InnerWallUpper_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/InnerWallUpper_Metalness.png</metalness_map>
+                <normal_map>materials/textures/InnerWallUpper_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/InnerWallUpper_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='LakeRailing_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/LakeRailing.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='LakeRailing_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/LakeRailing.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/LakeRailing_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/LakeRailing_Metalness.png</metalness_map>
+                <normal_map>materials/textures/LakeRailing_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/LakeRailing_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='PondWall_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/PondWall.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='PondWall_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/PondWall.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/PondWall_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/PondWall_Metalness.png</metalness_map>
+                <normal_map>materials/textures/PondWall_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/PondWall_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='Steps_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/Steps.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='Steps_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/Steps.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/Steps_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/Steps_Metalness.png</metalness_map>
+                <normal_map>materials/textures/Steps_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/Steps_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='LakeIsland_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/LakeIsland.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='LakeIsland_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/LakeIsland.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.01 0.01 0.01 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/LakeIlsand_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/LakeIlsand_Metalness.png</metalness_map>
+                <normal_map>materials/textures/LakeIlsand_Normal.png</normal_map>
+                <roughness_map>materials/textures/LakeIlsand_Roughness.png</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='HexFanHousing1_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/HexFanHousing.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='HexFanHousing1_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/HexFanHousing.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/HexFanHousing_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/HexFanHousing_Metalness.jpg</metalness_map>
+                <normal_map>materials/textures/HexFanHousing_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/HexFanHousing_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='HexFanHousing2_collision'>
+          <pose degrees='true'>0 0 0   0 0 180</pose>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/HexFanHousing.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='HexFanHousing2_visual'>
+          <pose degrees='true'>0 0 0   0 0 180</pose>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/HexFanHousing.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/HexFanHousing_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/HexFanHousing_Metalness.jpg</metalness_map>
+                <normal_map>materials/textures/HexFanHousing_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/HexFanHousing_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='HexGarden_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/HexGarden.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='HexGarden_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/HexGarden.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.02 0.02 0.02 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/GrassAndSoil_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/GrassAndSoil_Metalness.png</metalness_map>
+                <normal_map>materials/textures/GrassAndSoil_Normal.png</normal_map>
+                <roughness_map>materials/textures/GrassAndSoil_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <visual name='Anthurium_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/Anthurium01.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/anthurium_Albedo.png</albedo_map>
+                <normal_map>materials/textures/anthurium01_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/anthurium01_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <visual name='Calathea_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/Calathea01.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/Calathea01_Albedo.png</albedo_map>
+                <normal_map>materials/textures/Calathea01_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/Calathea01_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <visual name='Fern_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/Fern02.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/Fern02_Albedo.png</albedo_map>
+                <normal_map>materials/textures/Fern02_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/Fern02_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <visual name='Grass_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/Grass01.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.1 0.1 0.1 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/Grass01_Albedo.png</albedo_map>
+                <normal_map>materials/textures/Grass01_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/Grass01_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <visual name='Leaves_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/Leaves01.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/Tree01_BranchLeaves_Albedo.png</albedo_map>
+                <roughness_map>materials/textures/Tree01_BranchLeaves_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='Tree_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/Tree01.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='Tree_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/Tree01.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.2 0.2 0.2 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/SmallBranch_Albedo.jpg</albedo_map>
+                <normal_map>materials/textures/SmallBranch_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/SmallBranch_Roughness.png</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <link name='DoorLeft'>
+        <pose>0 117.589 5.195 0 -0 0</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/Door.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/Door.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/Door_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/Door_Metalness.png</metalness_map>
+                <normal_map>materials/textures/Door_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/Door_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <link name='DoorRight'>
+        <pose>0 117.589 5.195 3.14159 -0 3.14159</pose>
+        <collision name='collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/Door.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/Door.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/Door_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/Door_Metalness.png</metalness_map>
+                <normal_map>materials/textures/Door_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/Door_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <link name='Dome'>
+        <collision name='DomeOuter_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/DomeOuter.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='DomeOuter_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/DomeOuter.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/DomeOuter_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/DomeOuter_Metalness.png</metalness_map>
+                <normal_map>materials/textures/DomeOuter_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/DomeOuter_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='DomePt01_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/DomePt01.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='DomePt01_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/DomePt01.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/DomePt01_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/DomePt01_Metalness.png</metalness_map>
+                <normal_map>materials/textures/DomePt01_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/DomePt01_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='DomePt02_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/DomePt02.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='DomePt02_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/DomePt02.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/DomePt02_Albedo.jpg</albedo_map>
+                <metalness_map>materials/textures/DomePt02_Metalness.png</metalness_map>
+                <normal_map>materials/textures/DomePt02_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/DomePt02_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <collision name='InnerDome_collision'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/InnerDome.dae</uri>
+            </mesh>
+          </geometry>
+        </collision>
+        <visual name='InnerDome_visual'>
+          <geometry>
+            <mesh>
+              <uri>file:///root/.ignition/fuel/fuel.gazebosim.org/openrobotics/models/moon base dome/2/meshes/InnerDome.dae</uri>
+            </mesh>
+          </geometry>
+          <material>
+            <ambient>0.8 0.8 0.8 1</ambient>
+            <diffuse>0.8 0.8 0.8 1</diffuse>
+            <specular>0.8 0.8 0.8 1</specular>
+            <pbr>
+              <metal>
+                <albedo_map>materials/textures/InnerDome_Albedo.jpg</albedo_map>
+                <emissive_map>materials/textures/InnerDome_Emissive.jpg</emissive_map>
+                <metalness_map>materials/textures/InnerDome_Metalness.png</metalness_map>
+                <normal_map>materials/textures/InnerDome_Normal.jpg</normal_map>
+                <roughness_map>materials/textures/InnerDome_Roughness.jpg</roughness_map>
+              </metal>
+            </pbr>
+          </material>
+        </visual>
+        <pose>0 0 0 0 -0 0</pose>
+        <inertial>
+          <pose>0 0 0 0 -0 0</pose>
+          <mass>1</mass>
+          <inertia>
+            <ixx>1</ixx>
+            <ixy>0</ixy>
+            <ixz>0</ixz>
+            <iyy>1</iyy>
+            <iyz>0</iyz>
+            <izz>1</izz>
+          </inertia>
+        </inertial>
+        <enable_wind>false</enable_wind>
+      </link>
+      <joint name='world_joint' type='fixed'>
+        <parent>world</parent>
+        <child>main</child>
+        <pose>0 0 0 0 -0 0</pose>
+      </joint>
+      <pose>-0.904342 -3.26765 0 0 -0 0</pose>
+      <self_collide>false</self_collide>
+    </model>
+    <light name='sun' type='directional'>
+      <pose>0 0 10 0 -0 0</pose>
+      <cast_shadows>true</cast_shadows>
+      <intensity>1</intensity>
+      <direction>-0.5 0.1 -0.9</direction>
+      <diffuse>0.8 0.8 0.8 1</diffuse>
+      <specular>0.2 0.2 0.2 1</specular>
+      <attenuation>
+        <range>1000</range>
+        <linear>0.01</linear>
+        <constant>0.90000000000000002</constant>
+        <quadratic>0.001</quadratic>
+      </attenuation>
+      <spot>
+        <inner_angle>0</inner_angle>
+        <outer_angle>0</outer_angle>
+        <falloff>0</falloff>
+      </spot>
+    </light>
+  </world>
+</sdf>

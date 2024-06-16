@@ -1,0 +1,16 @@
+model {
+  file: "model.sdf"
+  file_format {
+    version {
+      major: 1
+      minor: 9
+    }
+    name: "sdf"
+  }
+}
+name: "Moon Base Dome"
+description: "Moon base dome"
+version: 1
+authors {
+}
+

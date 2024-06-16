@@ -1,0 +1,1007 @@
+<?xml version="1.0"?>
+<sdf version="1.9">
+    <model name="moon_base_dome">
+        <static>true</static>
+        <link name="main">
+            <collision name="BaseRamp_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/BaseRamp.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="BaseRamp_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/BaseRamp.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/BaseRamp_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/BaseRamp_Metalness.jpg</metalness_map>
+                            <normal_map>materials/textures/BaseRamp_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/BaseRamp_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="DomeEntryWay_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/DomeEntryWay.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="DomeEntryWay_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/DomeEntryWay.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/DomeGate_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/DomeGate_Metalness.jpg</metalness_map>
+                            <normal_map>materials/textures/DomeGate_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/DomeGate_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="OutsideRamp_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/OutsideRamp.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="OutsideRamp_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/OutsideRamp.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/ModPlatform_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/ModPlatform_Metalness.jpg</metalness_map>
+                            <normal_map>materials/textures/ModPlatform_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/ModPlatform_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="Tube_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/Tube.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="Tube_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/Tube.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/TubeNode_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/TubeNode_Metalness.png</metalness_map>
+                            <normal_map>materials/textures/TubeNode_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/TubeNode_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="DualFanVent_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/DualFanVent.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="DualFanVent_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/DualFanVent.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/DualFanVent_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/DualFanVent_Metalness.jpg</metalness_map>
+                            <normal_map>materials/textures/DualFanVent_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/DualFanVent_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="OuterWallGate_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/OuterWallGate.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="OuterWallGate_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/OuterWallGate.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/OuterWallGate_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/OuterWallGate_Metalness.jpg</metalness_map>
+                            <normal_map>materials/textures/OuterWallGate_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/OuterWallGate_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="OuterWall_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/OuterWall.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="OuterWall_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/OuterWall.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/OuterWall_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/OuterWall_Metalness.jpg</metalness_map>
+                            <normal_map>materials/textures/OuterWall_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/OuterWall_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="StrutBase_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/StrutBase.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="StrutBase_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/StrutBase.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/ModPlatformBase_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/ModPlatformBase_Metalness.jpg</metalness_map>
+                            <normal_map>materials/textures/ModPlatformBase_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/ModPlatformBase_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="InsideMainFloor_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/InsideMainFloor.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="InsideMainFloor_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/InsideMainFloor.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/InsideMainFloor_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/InsideMainFloor_Metalness.png</metalness_map>
+                            <normal_map>materials/textures/InsideMainFloor_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/InsideMainFloor_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="GardenUpper_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/GardenUpper.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="GardenUpper_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/GardenUpper.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/GardenUpper_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/GardenUpper_Metalness.png</metalness_map>
+                            <normal_map>materials/textures/GardenUpper_Normal.png</normal_map>
+                            <roughness_map>materials/textures/GardenUpper_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="GardenUpperLevel_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/GardenUpperLevel.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="GardenUpperLevel_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/GardenUpperLevel.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/GardenUpperLevel_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/GardenUpperLevel_Metalness.jpg</metalness_map>
+                            <normal_map>materials/textures/GardenUpperLevel_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/GardenUpperLevel_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="GardenUpperRailingRail_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/GardenUpperRailingRail.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="GardenUpperRailingRail_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/GardenUpperRailingRail.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/GardenUpperRailingRail_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/GardenUpperRailingRail_Metalness.png</metalness_map>
+                            <normal_map>materials/textures/GardenUpperRailingRail_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/GardenUpperRailingRail_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="IndoorEntryRamp_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/IndoorEntryRamp.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="IndoorEntryRamp_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/IndoorEntryRamp.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/IndoorEntryRamp_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/IndoorEntryRamp_Metalness.png</metalness_map>
+                            <normal_map>materials/textures/IndoorEntryRamp_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/IndoorEntryRamp_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="HexPlantPods_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/HexPlantPods.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="HexPlantPods_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/HexPlantPods.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/HexPlantPods_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/HexPlantPods_Metalness.png</metalness_map>
+                            <normal_map>materials/textures/HexPlantPods_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/HexPlantPods_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="IndoorRamp_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/IndoorRamp.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="IndoorRamp_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/IndoorRamp.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/IndoorRamp_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/IndoorRamp_Metalness.jpg</metalness_map>
+                            <normal_map>materials/textures/IndoorRamp_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/IndoorRamp_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="InnerWall_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/InnerWall.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="InnerWall_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/InnerWall.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/InnerWall_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/InnerWall_Metalness.png</metalness_map>
+                            <normal_map>materials/textures/InnerWall_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/InnerWall_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="InnerWallFrame_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/InnerWallFrame.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="InnerWallFrame_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/InnerWallFrame.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/InnerWallFrame_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/InnerWallFrame_Metalness.png</metalness_map>
+                            <normal_map>materials/textures/InnerWallFrame_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/InnerWallFrame_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="InnerWallTrim_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/InnerWallTrim.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="InnerWallTrim_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/InnerWallTrim.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/InnerWallTrim_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/InnerWallTrim_Metalness.png</metalness_map>
+                            <normal_map>materials/textures/InnerWallTrim_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/InnerWallTrim_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="InnerWallUpper_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/InnerWallUpper.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="InnerWallUpper_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/InnerWallUpper.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/InnerWallUpper_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/InnerWallUpper_Metalness.png</metalness_map>
+                            <normal_map>materials/textures/InnerWallUpper_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/InnerWallUpper_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="LakeRailing_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/LakeRailing.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="LakeRailing_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/LakeRailing.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/LakeRailing_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/LakeRailing_Metalness.png</metalness_map>
+                            <normal_map>materials/textures/LakeRailing_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/LakeRailing_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="PondWall_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/PondWall.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="PondWall_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/PondWall.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/PondWall_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/PondWall_Metalness.png</metalness_map>
+                            <normal_map>materials/textures/PondWall_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/PondWall_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="Steps_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/Steps.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="Steps_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/Steps.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/Steps_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/Steps_Metalness.png</metalness_map>
+                            <normal_map>materials/textures/Steps_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/Steps_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="LakeIsland_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/LakeIsland.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="LakeIsland_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/LakeIsland.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.01 0.01 0.01 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/LakeIlsand_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/LakeIlsand_Metalness.png</metalness_map>
+                            <normal_map>materials/textures/LakeIlsand_Normal.png</normal_map>
+                            <roughness_map>materials/textures/LakeIlsand_Roughness.png</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="HexFanHousing1_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/HexFanHousing.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="HexFanHousing1_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/HexFanHousing.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/HexFanHousing_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/HexFanHousing_Metalness.jpg</metalness_map>
+                            <normal_map>materials/textures/HexFanHousing_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/HexFanHousing_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="HexFanHousing2_collision">
+                <pose degrees="true">0 0 0 0 0 180</pose>
+                <geometry>
+                    <mesh>
+                        <uri>meshes/HexFanHousing.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="HexFanHousing2_visual">
+                <pose degrees="true">0 0 0 0 0 180</pose>
+                <geometry>
+                    <mesh>
+                        <uri>meshes/HexFanHousing.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/HexFanHousing_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/HexFanHousing_Metalness.jpg</metalness_map>
+                            <normal_map>materials/textures/HexFanHousing_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/HexFanHousing_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="HexGarden_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/HexGarden.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="HexGarden_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/HexGarden.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.02 0.02 0.02 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/GrassAndSoil_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/GrassAndSoil_Metalness.png</metalness_map>
+                            <normal_map>materials/textures/GrassAndSoil_Normal.png</normal_map>
+                            <roughness_map>materials/textures/GrassAndSoil_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <visual name="Anthurium_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/Anthurium01.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/anthurium_Albedo.png</albedo_map>
+                            <normal_map>materials/textures/anthurium01_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/anthurium01_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <visual name="Calathea_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/Calathea01.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/Calathea01_Albedo.png</albedo_map>
+                            <normal_map>materials/textures/Calathea01_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/Calathea01_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <visual name="Fern_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/Fern02.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/Fern02_Albedo.png</albedo_map>
+                            <normal_map>materials/textures/Fern02_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/Fern02_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <visual name="Grass_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/Grass01.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.1 0.1 0.1 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/Grass01_Albedo.png</albedo_map>
+                            <normal_map>materials/textures/Grass01_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/Grass01_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <visual name="Leaves_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/Leaves01.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/Tree01_BranchLeaves_Albedo.png</albedo_map>
+                            <roughness_map>materials/textures/Tree01_BranchLeaves_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="Tree_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/Tree01.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="Tree_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/Tree01.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.2 0.2 0.2 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/SmallBranch_Albedo.jpg</albedo_map>
+                            <normal_map>materials/textures/SmallBranch_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/SmallBranch_Roughness.png</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+        </link>
+        <link name="DoorLeft">
+            <pose>0 117.589 5.195 0 0 0</pose>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/Door.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/Door.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/Door_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/Door_Metalness.png</metalness_map>
+                            <normal_map>materials/textures/Door_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/Door_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+        </link>
+        <link name="DoorRight">
+            <pose>0 117.589 5.195 3.14159 0 3.14159</pose>
+            <collision name="collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/Door.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/Door.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/Door_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/Door_Metalness.png</metalness_map>
+                            <normal_map>materials/textures/Door_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/Door_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+        </link>
+        <link name="Dome">
+            <collision name="DomeOuter_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/DomeOuter.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="DomeOuter_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/DomeOuter.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/DomeOuter_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/DomeOuter_Metalness.png</metalness_map>
+                            <normal_map>materials/textures/DomeOuter_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/DomeOuter_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="DomePt01_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/DomePt01.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="DomePt01_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/DomePt01.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/DomePt01_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/DomePt01_Metalness.png</metalness_map>
+                            <normal_map>materials/textures/DomePt01_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/DomePt01_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="DomePt02_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/DomePt02.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="DomePt02_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/DomePt02.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/DomePt02_Albedo.jpg</albedo_map>
+                            <metalness_map>materials/textures/DomePt02_Metalness.png</metalness_map>
+                            <normal_map>materials/textures/DomePt02_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/DomePt02_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+            <collision name="InnerDome_collision">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/InnerDome.dae</uri>
+                    </mesh>
+                </geometry>
+            </collision>
+            <visual name="InnerDome_visual">
+                <geometry>
+                    <mesh>
+                        <uri>meshes/InnerDome.dae</uri>
+                    </mesh>
+                </geometry>
+                <material>
+                    <ambient>0.8 0.8 0.8 1</ambient>
+                    <diffuse>0.8 0.8 0.8 1</diffuse>
+                    <specular>0.8 0.8 0.8 1</specular>
+                    <pbr>
+                        <metal>
+                            <albedo_map>materials/textures/InnerDome_Albedo.jpg</albedo_map>
+                            <emissive_map>materials/textures/InnerDome_Emissive.jpg</emissive_map>
+                            <metalness_map>materials/textures/InnerDome_Metalness.png</metalness_map>
+                            <normal_map>materials/textures/InnerDome_Normal.jpg</normal_map>
+                            <roughness_map>materials/textures/InnerDome_Roughness.jpg</roughness_map>
+                        </metal>
+                    </pbr>
+                </material>
+            </visual>
+        </link>
+        <joint name="world_joint" type="fixed">
+            <parent>world</parent>
+            <child>main</child>
+        </joint>
+    </model>
+</sdf>
